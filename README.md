@@ -90,10 +90,3 @@ Predict `GHG_Emissions_kgCO2e` using regression techniques.
 A reliable and interpretable regression model capable of estimating GHG emission factors for commodities across industries with high accuracy and generalizability.
 
 ---
-
-## 📬 Contact
-
-For questions, contributions, or collaborations, feel free to reach out!
-
----
-
