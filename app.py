@@ -27,7 +27,7 @@ with st.form("prediction_form"):
     dq_geo = st.slider("DQ Geographical Correlation", 0.0, 1.0)
     dq_tech = st.slider("DQ Technological Correlation", 0.0, 1.0)
     dq_data = st.slider("DQ Data Collection", 0.0, 1.0)
-    # year = st.selectbox("Year", list(range(2010, 2017)))
+    year = st.selectbox("Year", list(range(2010, 2017)))
 
     submit = st.form_submit_button("Predict")
 
@@ -43,7 +43,7 @@ if submit:
         'DQ TechnologicalCorrelation of Factors without Margins': dq_tech,
         'DQ DataCollection of Factors without Margins': dq_data,
         'Source': source,
-        # 'Year': year
+        'Year': year
     }
 
     input_df = preprocess_input(pd.DataFrame([input_data]))
